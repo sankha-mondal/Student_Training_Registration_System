@@ -1,0 +1,17 @@
+select stu.s_email, stu.s_name, co.course_name, co.course_details
+from student stu
+inner JOIN student_courses sc
+on stu.s_email = sc.s_email
+inner JOIN courses co
+on sc.c_id = co.c_id
+and stu.s_email = 'akash@gmail.com';
+
+ 
+
+select stu.s_email, stu.s_name, co.course_name, co.course_details
+from student stu
+inner JOIN student_courses sc
+on stu.s_email = sc.s_email
+inner JOIN courses co
+on sc.c_id = co.c_id
+and co.course_name = 'AOP';
